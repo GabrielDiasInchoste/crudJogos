@@ -1,6 +1,6 @@
 <?php
     session_start();
-    define('BASE_URL', 'http://localhost/crud_jogos');
+    define('BASE_URL', 'http://gabrieldias.tplinkdns.com:8080/crudJogos');
 
     if(isset($_GET['acao']) && $_GET['acao']=="sair"){
         unset($_SESSION['logado']);

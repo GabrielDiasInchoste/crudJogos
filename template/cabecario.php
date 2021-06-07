@@ -1,12 +1,12 @@
 <?php
     session_start();
-    define('BASE_URL', 'http://gabrieldias.tplinkdns.com:8080/crud_jogos');
+    define('BASE_URL', 'http://gabrieldias.tplinkdns.com:8080/crudJogos');
     //Finaliza a sessão logado da Aplicação
     if(isset($_GET['acao']) && $_GET['acao']=="sair"){
         unset($_SESSION['logado']);
     }
     if(!isset($_SESSION['logado'])){
-      header('Location: http://gabrieldias.tplinkdns.com:8080/crud_jogos/login.php');
+      header('Location: http://gabrieldias.tplinkdns.com:8080/crudJogos/login.php');
       exit();
     }
 ?>
